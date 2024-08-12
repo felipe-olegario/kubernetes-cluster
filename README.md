@@ -24,8 +24,8 @@ Antes de começar, certifique-se de ter os seguintes softwares instalados:
 1. **Clone o repositório:**
 
     ```bash
-    git clone <URL-do-repositório>
-    cd <nome-do-repositório>
+    git clone git@github.com:felipe-olegario/kubernetes-cluster.git
+    cd kubernetes-cluster
     ```
 
 2. **Inicie o Minikube:**
@@ -86,32 +86,7 @@ Antes de começar, certifique-se de ter os seguintes softwares instalados:
 
    Isso abrirá o serviço no navegador padrão. Caso o serviço não seja acessível, verifique a URL exibida e tente acessar diretamente.
 
-3. **Se estiver usando Ingress, adicione uma entrada no arquivo `hosts` do seu sistema para `myapp.local`:**
-
-    No Windows, edite o arquivo `C:\Windows\System32\drivers\etc\hosts` e adicione:
-
-    ```
-    127.0.0.1 myapp.local
-    ```
-
-    No macOS/Linux, edite o arquivo `/etc/hosts` e adicione:
-
-    ```
-    127.0.0.1 myapp.local
-    ```
-
-4. **Acesse a aplicação usando o endereço `http://myapp.local` no navegador.**
-
 ## Problemas Conhecidos
 
 - Se o Minikube não conseguir encontrar o contexto Docker, verifique a configuração do Docker CLI e reinicie o Minikube.
 - Certifique-se de que as portas e serviços estão corretamente configurados e em execução.
-
-## Contribuições
-
-Sinta-se à vontade para contribuir com melhorias ou correções. Abra um [issue](https://github.com/seu-repositorio/issues) ou envie um pull request.
-
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE).
-
